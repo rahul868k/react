@@ -1,0 +1,22 @@
+.post{
+    outline: 1px solid gray;
+    margin: 1rem 5rem;
+}
+center{
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+}
+center .page-button{
+    outline: 1px solid gray;
+    padding: 3px 10px;
+    margin: 5px;
+}
+.page-button:hover{
+    cursor: pointer;
+    transition: transform 0.5s steps(10);
+    transform: scale(1.1);
+}

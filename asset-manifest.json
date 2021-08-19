@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/securepay-spa/static/css/main.bd358f05.chunk.css",
+    "main.js": "/securepay-spa/static/js/main.7aeb220d.chunk.js",
+    "main.js.map": "/securepay-spa/static/js/main.7aeb220d.chunk.js.map",
+    "runtime-main.js": "/securepay-spa/static/js/runtime-main.9f7ef881.js",
+    "runtime-main.js.map": "/securepay-spa/static/js/runtime-main.9f7ef881.js.map",
+    "static/css/2.9082872e.chunk.css": "/securepay-spa/static/css/2.9082872e.chunk.css",
+    "static/js/2.af7357ce.chunk.js": "/securepay-spa/static/js/2.af7357ce.chunk.js",
+    "static/js/2.af7357ce.chunk.js.map": "/securepay-spa/static/js/2.af7357ce.chunk.js.map",
+    "static/js/3.13bab62e.chunk.js": "/securepay-spa/static/js/3.13bab62e.chunk.js",
+    "static/js/3.13bab62e.chunk.js.map": "/securepay-spa/static/js/3.13bab62e.chunk.js.map",
+    "index.html": "/securepay-spa/index.html",
+    "static/css/2.9082872e.chunk.css.map": "/securepay-spa/static/css/2.9082872e.chunk.css.map",
+    "static/css/main.bd358f05.chunk.css.map": "/securepay-spa/static/css/main.bd358f05.chunk.css.map",
+    "static/js/2.af7357ce.chunk.js.LICENSE.txt": "/securepay-spa/static/js/2.af7357ce.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/securepay-spa/static/media/svg.44a86ffb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f7ef881.js",
+    "static/css/2.9082872e.chunk.css",
+    "static/js/2.af7357ce.chunk.js",
+    "static/css/main.bd358f05.chunk.css",
+    "static/js/main.7aeb220d.chunk.js"
+  ]
+}

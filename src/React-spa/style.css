@@ -46,10 +46,13 @@ html {
     position: fixed;
     bottom: 12px;
     left: 50%;
+    transform: translate(-50%);
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background: #8b0000;
+    /* background: #8b0000; */
+    background: var(--primary-color);
+    opacity: 0.8;
     color: #fff;
     z-index: 6;
     cursor: pointer;
@@ -568,7 +571,7 @@ header{
 
 .work-container{
     width: 80vw;
-    padding: 5rem 5rem 0;
+    padding: 4rem 4rem 0;
     box-shadow: 0 0.4em 1.2rem rgba(0, 0, 0, 0.25);
     margin-top: -8rem;
     background: #fff;
@@ -592,7 +595,7 @@ header{
     font-weight: bolder;
 }
 .work-container-sub{
-    padding: 0 1rem;
+    padding: 0 0.6rem;
 }
 .work-container-sub i, .service-main-container i{
     font-size: 2rem;
@@ -625,6 +628,14 @@ header{
         right: 0;
         clip-path: polygon(100% 100%, 51% 100%, 100% 70%);
         mix-blend-mode: multiply;
+    }
+}
+@media all and (max-width:533px) {
+    .work-container{
+       padding: 1rem 1rem 0;
+       width: 95vw;
+       margin-top: 2.5rem;
+       margin-inline: auto;
     }
 }
 @media all and (max-width:1024px) {

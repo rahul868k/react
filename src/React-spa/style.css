@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html,body{
+    scroll-behavior: smooth;
+}
 body::before {
     display: block;
     content: '';
@@ -26,16 +29,45 @@ html {
 /* loading screen animation */
 /*  */
 /* horizontal bar */
-.bar{
+.scroll-container {
     position: fixed;
     top: 0;
+    z-index: 100;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: var(--primary-color);
-    z-index: 100;
-    display: none;
+    height: 4px;
 }
+.scroll-container .indicator {
+    height: 100%;
+    background: var(--primary-color);
+}
+/* scroll to top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #8b0000;
+    color: #fff;
+    z-index: 6;
+    cursor: pointer;
+}
+.scroll-to-top .icon {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}
+
 /* bg-animation */
 /* .animation-area{
     width: 100%;
@@ -388,7 +420,13 @@ h6 {
     background: #182334;
     border-radius: 40px;
     transition: clip-path 0.5s ease;
+    /* clip-path: circle(0% at right bottom); */
+}
+.menuNav{
     clip-path: circle(0% at right bottom);
+}
+.menuNav.showMenu{
+    clip-path: circle(150% at right bottom);
 }
 .nav ul li a{
     color: #fff;
@@ -401,10 +439,10 @@ h6 {
     color: var(--primary-color) !important;
     text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
 }
-#menu-btn:checked ~ .nav ul{
+/* #menu-btn:checked ~ .nav ul{
      clip-path: circle(150% at right bottom);
-}
-#menu-btn:checked ~ .menu-btn .nav-icon{
+} */
+/* #menu-btn:checked ~ .menu-btn .nav-icon{
     background: transparent;
 }
 #menu-btn:checked ~ .menu-btn .nav-icon::before{
@@ -414,7 +452,7 @@ h6 {
 #menu-btn:checked ~ .menu-btn .nav-icon::after{
     transform: rotate(-45deg);
     top: 0;
-}
+} */
 @media all and (min-width:768px) {
     .nav ul{
         width: 30vw;
@@ -424,10 +462,16 @@ h6 {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
+        /* clip-path: circle(0% at left top); */
+    }
+    .menuNav{
         clip-path: circle(0% at left top);
     }
-    #menu-btn:checked ~ .nav ul{
+    /* #menu-btn:checked ~ .nav ul{
         clip-path: circle(150% at left top);
+   } */
+   .menuNav.showMenu{
+    clip-path: circle(150% at left top);
    }
    .menu-btn{
        top: 4%;

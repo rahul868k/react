@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import { NavLink } from 'react-router-dom'
-
+import ScrollToTop from './scrollToTop'
+import ScrollIndicator from './Scrollindicator'
 const Sidenav = () => {
+    const [navbarOpen, setNavbarOpen] = useState(false)
+    const handleToggle = () => {
+        setNavbarOpen(prev => !prev)
+    }
+
+    const closeMenu = () => {
+        setNavbarOpen(false)
+      }
     // const [show, setShow] = useState(false)
     // const [nav, setNav] = useState(false)
     // const changeBackground =() =>{
@@ -15,7 +24,8 @@ const Sidenav = () => {
     // window.addEventListener('scroll',changeBackground);
     return (
         <>
-            <div className="bar"></div>
+            <ScrollToTop></ScrollToTop>
+            <ScrollIndicator></ScrollIndicator>
             <div className="animation-area">
                 <ul className="box-area">
                     <li></li>
@@ -27,7 +37,7 @@ const Sidenav = () => {
                 </ul>
             </div>
             <section class="navbar-bg">
-             
+
                 <div className="container n-bar d-flex justify-content-between flex-wrap">
                     <h1 className="navbar-brand"><i class="fab fa-react"></i>React</h1>
                     <form class="d-flex align-items-center">
@@ -35,19 +45,19 @@ const Sidenav = () => {
                         <a href="https://svg-loginform.netlify.app/" class="btn btn-style d-flex justify-content-center align-items-center" type="submit">Login<i class="fas fa-arrow-right"></i></a>
                     </form>
                 </div>
-               
+
             </section>
             <input type="checkbox" id="menu-btn" />
-            <label htmlFor="menu-btn" className="menu-btn"><span className="nav-icon"></span></label>
+            <label htmlFor="menu-btn" className="menu-btn" onClick={handleToggle}><span className="nav-icon">{navbarOpen ? "" : ""}</span></label>
             <nav className="nav">
-                <ul>
-                    <li><NavLink to='/Home' exact activeClassName="active-nav"><a href="##">Home</a></NavLink></li>
-                    <li><NavLink to='/Services' activeClassName="active-nav"><a href="##">Services</a></NavLink></li>
-                    <li><NavLink to='/About' activeClassName="active-nav"><a href="##">About</a></NavLink></li>
-                    <li><NavLink to='/Contact' activeClassName="active-nav"><a href="##">Contact</a></NavLink></li>
+                <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+                    <li><NavLink to='/Home' onClick={()=> closeMenu()} exact activeClassName="active-nav"><a href="##">Home</a></NavLink></li>
+                    <li><NavLink to='/Services' onClick={()=> closeMenu()} activeClassName="active-nav"><a href="##">Services</a></NavLink></li>
+                    <li><NavLink to='/About' onClick={()=> closeMenu()} activeClassName="active-nav"><a href="##">About</a></NavLink></li>
+                    <li><NavLink to='/Contact' onClick={()=> closeMenu()} activeClassName="active-nav"><a href="##">Contact</a></NavLink></li>
                 </ul>
             </nav>
-           
+
             <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">

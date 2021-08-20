@@ -1,4 +1,7 @@
 import React from 'react'
+import Video1 from "./hero1vd.webm"
+import Video2 from "./herovd2.webm"
+
 
 const Header = () => {
     return (
@@ -22,8 +25,8 @@ const Header = () => {
                         </div>
                         <div className="col-12 col-lg-7 header-right-side d-flex justify-content-center align-items-center">
                             {/* <img src="./images/hero1.jpg" alt="heroImage1" className="img-fluid" /> */}
-                            <video src="./images/hero1vd.webm" autoPlay repeat="true" loop></video>
-                            <video src="./images/herovd2.webm" autoPlay repeat="true" loop></video>
+                            <video src={Video1} type="video/webm" autoPlay repeat="true" loop></video>
+                            <video src={Video2} type="video/webm" autoPlay repeat="true" loop></video>
                             {/* <img src="./images/hero4.jpg" alt="heroImage4" className="img-fluid" /> */}
                         </div>
                     </div>

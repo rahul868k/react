@@ -3,7 +3,7 @@ import Api from './Api/Workapi'
 
 const Howitworks = () => {
     
-    const [data, setData] = useState(Api)
+    const [data ] = useState(Api)
 
     return (
         <>

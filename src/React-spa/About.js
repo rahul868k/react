@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Data } from './Api/Workapi'
+import Hero3 from './Api/hero3.png'
+import Hero4 from './Api/hero4.jpg'
 
 const About = () => {
 
@@ -11,7 +13,7 @@ const About = () => {
                 <div className="container mb-5">
                     <div className="row">
                         <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center our-service-left">
-                            <img src="./images/hero3.png" alt="about" className="image-fluid" />
+                            <img src={Hero3} alt="about" className="image-fluid" />
                         </div>
                         <div className="col-12 col-lg-7 our-service-list">
                             <h3 className="mini-title">
@@ -60,7 +62,7 @@ const About = () => {
                 <div className="container mb-5">
                     <div className="row d-lg-flex flex-lg-row flex-lg-row-reverse reverse">
                         <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center our-service-left">
-                            <img src="./images/hero4.jpg" alt="about" className="image-fluid" />
+                            <img src={Hero4} alt="about" className="image-fluid" />
                         </div>
                         <div className="col-12 col-lg-7 our-service-list">
                             <h3 className="mini-title">

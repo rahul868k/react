@@ -23,6 +23,8 @@ body::before {
 html {
   font-size: 62.5%;
 }
+/* loading screen animation */
+/*  */
 /* horizontal bar */
 .bar{
     position: fixed;
@@ -309,7 +311,6 @@ h6 {
     background: var(--primary-color);
     text-transform: capitalize;
     position: relative;
-    display: inline-block;
 }
 .n-bar .btn-style:nth-child(2) i{
    margin-left: 0.4rem;
@@ -584,7 +585,7 @@ header{
 }
 @media all and (max-width:1024px) {
     .work-container{
-        margin: inherit;
+        margin: 2.5rem auto 0;
     }
     .main-hero-para{
         margin: 0;

@@ -4,11 +4,13 @@ import './Covid'
 const Covid = () => {
 
     const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
 
     const getData = async () =>{
         try {
             const res =await fetch('https://api.covid19india.org/data.json'); 
             const actual = await res.json()
+            setLoading(true)
             console.log(actual.statewise[0])
             setData(actual.statewise[0])
         } catch (error) {
@@ -44,7 +46,7 @@ const Covid = () => {
                             <p className="card_na">
                                 <span>Total</span> Recovered
                             </p>
-                            <p className="card_total card_small">{data.recovered}</p>
+                            <p className="card_total card_small">{data.recovered?data.recovered:'loading...'}</p>
                         </div>
                     </div>
                 </li>

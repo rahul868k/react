@@ -11,7 +11,7 @@ const Howitworks = () => {
                 <div className="work-container container pb-5">
                     <h1 className="main-heading text-center">How does it works</h1>
                     <div className="row">
-                        {
+                        { 
                             data.map(currentE => {
                                 const { id, logo, title, info } = currentE;
                                 return (
@@ -20,7 +20,7 @@ const Howitworks = () => {
                                             <i className={logo}></i>
                                             <h2 className="sub-head">{title}</h2>
                                             <div className="main-hero-para w-100">
-                                                {info}
+                                                {info?info:'loading...'}
                                             </div>
                                         </div>
                                     </>

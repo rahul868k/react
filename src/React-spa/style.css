@@ -410,13 +410,12 @@ h6 {
 }
 .nav ul{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 2.5vh;
+    left: 2.5vw;
     list-style: none;
     height: 95vh;
     width: 95vw;
     display: flex;
-    margin: 2.5vh auto;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -458,9 +457,10 @@ h6 {
 } */
 @media all and (min-width:768px) {
     .nav ul{
+        top: 0;
+        left: 0;
         width: 30vw;
         height: 100vh;
-        margin: 0;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 30px;

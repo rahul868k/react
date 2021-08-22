@@ -1,14 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Data } from './Api/Workapi'
 import Hero3 from './Api/hero3.png'
 import Hero4 from './Api/hero4.jpg'
+import BeatLoader from "react-spinners/RingLoader";
+import { css } from "@emotion/react";
+
 
 const About = () => {
 
-    const [data, setData] = useState(Data)
+    const [data] = useState(Data)
+    const [loading, setLoading] = useState(false)
+    useEffect(()=>{
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000);
+    },[])
+    const override =css`
+        display:block;
+        margin: 10% auto 50%;
+        `;
     return (
         <>
-        {/* one */}
+        {/* one */}{loading ? <BeatLoader color={"#6f5de7"} loading={loading} css={override} size={40} margin={3} />
+        :<div>
             <section className="section our-services">
                 <div className="container mb-5">
                     <div className="row">
@@ -60,6 +75,7 @@ const About = () => {
             {/* two */}
             <section className="section our-services">
                 <div className="container mb-5">
+                {loading ? loading: <div className="text text-primary display-2 d-flex justify-content-center align-items-center">Loading......</div>}
                     <div className="row d-lg-flex flex-lg-row flex-lg-row-reverse reverse">
                         <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center our-service-left">
                             <img src={Hero4} alt="about" className="image-fluid" />
@@ -90,6 +106,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+        </div>}
         </>
     )
 }

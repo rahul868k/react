@@ -1,9 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Service } from './Api/Workapi'
+// import Loader from './icons8-buffering-96.png'
+import ClimbingBoxLoader from "react-spinners/RingLoader";
+import { css } from "@emotion/react";
 
 const Services = () => {
 
-    const [services, setServices] = useState(Service)
+    const [services] = useState(Service)
+    const [color] = useState("#6f5de7")
+    const [loading, setLoading] = useState(false)
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000);
+    }, [])
+    const override =css`
+        display:block;
+        margin:0 auto;
+        `;
     return (
         <div>
             <section className="service-main-container">
@@ -11,7 +26,8 @@ const Services = () => {
                     <h1 className="main-heading text-center fw-bold"> How to send money</h1>
                     <div className="row">
                         {
-                            services.map(ser => {
+                            loading ? <ClimbingBoxLoader color={color} loading={loading} css={override} size={40} />
+                             :services.map(ser => {
                                 const { id, logo, title, info } = ser;
                                 return (
                                     <>
@@ -23,6 +39,9 @@ const Services = () => {
                                     </>
                                 )
                             })
+                            // <div className="display-2 d-flex justify-content-center align-items-center">
+                            //      <img src={Loader} alt="loader" />
+                            // </div>
                         }
 
                     </div>

@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { Data } from './Api/Workapi'
 import Hero3 from './Api/hero3.png'
 import Hero4 from './Api/hero4.jpg'
-import BeatLoader from "react-spinners/RingLoader";
+import RingLoader from "react-spinners/RingLoader";
 import { css } from "@emotion/react";
 
 
@@ -18,11 +18,11 @@ const About = () => {
     },[])
     const override =css`
         display:block;
-        margin: 10% auto 50%;
+        margin: 30% auto 100vh;
         `;
     return (
         <>
-        {/* one */}{loading ? <BeatLoader color={"#6f5de7"} loading={loading} css={override} size={40} margin={3} />
+        {/* one */}{loading ? <RingLoader color={"#6f5de7"} loading={loading} css={override} size={40} />
         :<div>
             <section className="section our-services">
                 <div className="container mb-5">

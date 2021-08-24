@@ -1,9 +1,22 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+import RingLoader from "react-spinners/RingLoader";
+import { css } from "@emotion/react";
 
 const Contact = () => {
+    const [loader, setLoader] = useState(false)
+    useEffect(()=> {
+        setLoader(true)
+        setTimeout(() => {
+            setLoader(false)
+        }, 2000);
+    },[])
+    const override =css`
+    display:block;
+    margin: 35vh auto 50vh;
+    `;
     return (
-        <>
-            <section id="Contact-Us" class="py-3 p-lg-4">
+        <>  {loader ? <RingLoader color={"#6f5de7"} loader={loader} css={override} size={60} />
+            :<section id="Contact-Us" class="py-3 p-lg-4">
                 <div class="container mt-4">
                     <div class="row g-4">
                         <div class="col-md" data-aos="fadeInUp">
@@ -69,7 +82,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>}
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import { Service } from './Api/Workapi'
 // import Loader from './icons8-buffering-96.png'
-import ClimbingBoxLoader from "react-spinners/RingLoader";
+import RingLoader from "react-spinners/RingLoader";
 import { css } from "@emotion/react";
 
 const Services = () => {
@@ -26,7 +26,7 @@ const Services = () => {
                     <h1 className="main-heading text-center fw-bold"> How to send money</h1>
                     <div className="row">
                         {
-                            loading ? <ClimbingBoxLoader color={color} loading={loading} css={override} size={40} />
+                            loading ? <RingLoader color={color} loading={loading} css={override} size={40} />
                              :services.map(ser => {
                                 const { id, logo, title, info } = ser;
                                 return (
@@ -39,9 +39,6 @@ const Services = () => {
                                     </>
                                 )
                             })
-                            // <div className="display-2 d-flex justify-content-center align-items-center">
-                            //      <img src={Loader} alt="loader" />
-                            // </div>
                         }
 
                     </div>

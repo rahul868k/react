@@ -21,7 +21,7 @@ const Main = () => {
     }, [])
     const override =css`
         display:block;
-        margin: 38vh auto;
+        margin: 32vh auto;
         `;
     return (
         <div>

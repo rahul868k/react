@@ -1,29 +1,25 @@
 {
   "files": {
-    "main.css": "/securepay-spa/static/css/main.937e74cb.chunk.css",
-    "main.js": "/securepay-spa/static/js/main.46358a26.chunk.js",
-    "main.js.map": "/securepay-spa/static/js/main.46358a26.chunk.js.map",
-    "runtime-main.js": "/securepay-spa/static/js/runtime-main.8dc520d3.js",
-    "runtime-main.js.map": "/securepay-spa/static/js/runtime-main.8dc520d3.js.map",
-    "static/css/2.9082872e.chunk.css": "/securepay-spa/static/css/2.9082872e.chunk.css",
-    "static/js/2.6dfa8048.chunk.js": "/securepay-spa/static/js/2.6dfa8048.chunk.js",
-    "static/js/2.6dfa8048.chunk.js.map": "/securepay-spa/static/js/2.6dfa8048.chunk.js.map",
-    "static/js/3.2d005451.chunk.js": "/securepay-spa/static/js/3.2d005451.chunk.js",
-    "static/js/3.2d005451.chunk.js.map": "/securepay-spa/static/js/3.2d005451.chunk.js.map",
-    "index.html": "/securepay-spa/index.html",
-    "static/css/2.9082872e.chunk.css.map": "/securepay-spa/static/css/2.9082872e.chunk.css.map",
-    "static/css/main.937e74cb.chunk.css.map": "/securepay-spa/static/css/main.937e74cb.chunk.css.map",
-    "static/js/2.6dfa8048.chunk.js.LICENSE.txt": "/securepay-spa/static/js/2.6dfa8048.chunk.js.LICENSE.txt",
-    "static/media/hero1vd.b474e128.webm": "/securepay-spa/static/media/hero1vd.b474e128.webm",
-    "static/media/hero4.b6aaa760.jpg": "/securepay-spa/static/media/hero4.b6aaa760.jpg",
-    "static/media/herovd2.34794c88.webm": "/securepay-spa/static/media/herovd2.34794c88.webm",
-    "static/media/style.css": "/securepay-spa/static/media/svg.44a86ffb.png"
+    "main.css": "/casino/static/css/main.32921e39.chunk.css",
+    "main.js": "/casino/static/js/main.04f56631.chunk.js",
+    "main.js.map": "/casino/static/js/main.04f56631.chunk.js.map",
+    "runtime-main.js": "/casino/static/js/runtime-main.6b2ecf75.js",
+    "runtime-main.js.map": "/casino/static/js/runtime-main.6b2ecf75.js.map",
+    "static/css/2.9082872e.chunk.css": "/casino/static/css/2.9082872e.chunk.css",
+    "static/js/2.a77ad79f.chunk.js": "/casino/static/js/2.a77ad79f.chunk.js",
+    "static/js/2.a77ad79f.chunk.js.map": "/casino/static/js/2.a77ad79f.chunk.js.map",
+    "static/js/3.54b494d1.chunk.js": "/casino/static/js/3.54b494d1.chunk.js",
+    "static/js/3.54b494d1.chunk.js.map": "/casino/static/js/3.54b494d1.chunk.js.map",
+    "index.html": "/casino/index.html",
+    "static/css/2.9082872e.chunk.css.map": "/casino/static/css/2.9082872e.chunk.css.map",
+    "static/css/main.32921e39.chunk.css.map": "/casino/static/css/main.32921e39.chunk.css.map",
+    "static/js/2.a77ad79f.chunk.js.LICENSE.txt": "/casino/static/js/2.a77ad79f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8dc520d3.js",
+    "static/js/runtime-main.6b2ecf75.js",
     "static/css/2.9082872e.chunk.css",
-    "static/js/2.6dfa8048.chunk.js",
-    "static/css/main.937e74cb.chunk.css",
-    "static/js/main.46358a26.chunk.js"
+    "static/js/2.a77ad79f.chunk.js",
+    "static/css/main.32921e39.chunk.css",
+    "static/js/main.04f56631.chunk.js"
   ]
 }

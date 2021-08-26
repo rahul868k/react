@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/casino/static/css/main.32921e39.chunk.css",
-    "main.js": "/casino/static/js/main.04f56631.chunk.js",
-    "main.js.map": "/casino/static/js/main.04f56631.chunk.js.map",
-    "runtime-main.js": "/casino/static/js/runtime-main.6b2ecf75.js",
-    "runtime-main.js.map": "/casino/static/js/runtime-main.6b2ecf75.js.map",
-    "static/css/2.9082872e.chunk.css": "/casino/static/css/2.9082872e.chunk.css",
-    "static/js/2.a77ad79f.chunk.js": "/casino/static/js/2.a77ad79f.chunk.js",
-    "static/js/2.a77ad79f.chunk.js.map": "/casino/static/js/2.a77ad79f.chunk.js.map",
-    "static/js/3.54b494d1.chunk.js": "/casino/static/js/3.54b494d1.chunk.js",
-    "static/js/3.54b494d1.chunk.js.map": "/casino/static/js/3.54b494d1.chunk.js.map",
-    "index.html": "/casino/index.html",
-    "static/css/2.9082872e.chunk.css.map": "/casino/static/css/2.9082872e.chunk.css.map",
-    "static/css/main.32921e39.chunk.css.map": "/casino/static/css/main.32921e39.chunk.css.map",
-    "static/js/2.a77ad79f.chunk.js.LICENSE.txt": "/casino/static/js/2.a77ad79f.chunk.js.LICENSE.txt"
+    "main.css": "/securepay-spa/static/css/main.32921e39.chunk.css",
+    "main.js": "/securepay-spa/static/js/main.04f56631.chunk.js",
+    "main.js.map": "/securepay-spa/static/js/main.04f56631.chunk.js.map",
+    "runtime-main.js": "/securepay-spa/static/js/runtime-main.dbb2fb7e.js",
+    "runtime-main.js.map": "/securepay-spa/static/js/runtime-main.dbb2fb7e.js.map",
+    "static/css/2.9082872e.chunk.css": "/securepay-spa/static/css/2.9082872e.chunk.css",
+    "static/js/2.19b32091.chunk.js": "/securepay-spa/static/js/2.19b32091.chunk.js",
+    "static/js/2.19b32091.chunk.js.map": "/securepay-spa/static/js/2.19b32091.chunk.js.map",
+    "static/js/3.54b494d1.chunk.js": "/securepay-spa/static/js/3.54b494d1.chunk.js",
+    "static/js/3.54b494d1.chunk.js.map": "/securepay-spa/static/js/3.54b494d1.chunk.js.map",
+    "index.html": "/securepay-spa/index.html",
+    "static/css/2.9082872e.chunk.css.map": "/securepay-spa/static/css/2.9082872e.chunk.css.map",
+    "static/css/main.32921e39.chunk.css.map": "/securepay-spa/static/css/main.32921e39.chunk.css.map",
+    "static/js/2.19b32091.chunk.js.LICENSE.txt": "/securepay-spa/static/js/2.19b32091.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b2ecf75.js",
+    "static/js/runtime-main.dbb2fb7e.js",
     "static/css/2.9082872e.chunk.css",
-    "static/js/2.a77ad79f.chunk.js",
+    "static/js/2.19b32091.chunk.js",
     "static/css/main.32921e39.chunk.css",
     "static/js/main.04f56631.chunk.js"
   ]

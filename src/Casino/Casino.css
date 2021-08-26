@@ -1,0 +1,52 @@
+body{
+    height: auto;
+}
+.footer{
+    position: absolute;
+    top: 150%;
+    border: 2px block solid;
+    background-color: gray;
+    padding-top: 15px;
+    color: white;
+}
+.wheel{
+    margin-block: 2rem;
+    transform: Scale(0);
+    transition: transform 0.4s ease;
+}
+.spin::before{
+    content: 'spin wheel and get rewards';
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.25);
+    display: block;
+    color: lightblue;
+    width:150%;
+    height: 150%;
+    top: -170px;
+    left: -20px;
+    mix-blend-mode:darken;
+
+}
+.wheel.open{
+    transform: scale(1);
+}
+.wheel img{
+    animation: wheel 2s linear infinite;
+}
+@keyframes wheel {
+    to{
+        transform: rotate(360deg);
+    }
+}
+.spin{
+    text-decoration: none;
+    color: white;
+    background: rgb(177, 173, 230);
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 20%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+

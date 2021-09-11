@@ -81,7 +81,7 @@ h1{
 }
 .img-div{
   padding: 5px;
-  margin: auto;
+  margin: auto !important;
   position: relative;
   font-size: 1rem;
   text-align: center;
@@ -90,6 +90,19 @@ h1{
 img{
   width: 250px;
   height: 250px;
+}
+.skeleton{
+  width: 150px;
+  height: 150px;
+  animation: skeleton-loading 2s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0%{
+    background-color: hsl(200, 20%, 70%);
+  }
+  100%{
+    background-color: hsl(200, 20%, 95%);
+  }
 }
 /* 
 .img-div::after{
@@ -125,8 +138,7 @@ img {
 }
 
 .img-fluid {
-  height: 150px;
- 
+  height: 150px !important;
 }
 
 .main-title h1 {

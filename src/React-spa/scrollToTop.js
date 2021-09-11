@@ -3,13 +3,13 @@ import { useWindowScroll } from "react-use";
 
 const ScrollToTop = () => {
     const { y: pageYOffset } = useWindowScroll();
-    const [visible, setVisiblity] = useState(false);
+    const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         if (pageYOffset > 300) {
-            setVisiblity(true);
+            setVisible(true);
         } else {
-            setVisiblity(false);
+            setVisible(false);
         }
     }, [pageYOffset]);
 

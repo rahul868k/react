@@ -2,7 +2,6 @@ import React from 'react'
 import './style.css'
 import { NavLink } from 'react-router-dom'
 
-
 const Navbar = () => {
 
     return (
@@ -22,7 +21,7 @@ const Navbar = () => {
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
                         <a class="navbar-brand" href="##"><i class="fab fa-react"></i>React</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">

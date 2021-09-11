@@ -1,0 +1,76 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #e5e5e5 !important;
+}
+.app{
+    width: 400px;
+    min-height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 13px #0002,
+                -10px -10px 13px #fff7;
+                
+}
+form{
+    margin: 20px;
+    height: 40px;
+    width: 100%;
+}
+form input,
+form button{
+    width: 250px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    padding: 0 5px;
+    box-shadow: inset -5px -5px 5px #fff7,
+                inset  5px 5px 5px #0002;
+}
+form button{
+    width: 80px;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: -5px -5px 5px #fff7,
+               5px 5px 5px #0002;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #e5e5e5;
+    margin-bottom: 20px;
+    text-shadow: -3px -3px 3px #fff7,
+                  3px 3px 3px #0003;
+}
+.app ul{
+    margin: 0 ;
+    padding: 0 ;
+}
+.app ul li{
+    list-style: none;
+    margin-block: 15px;
+    padding: 10px;
+    text-transform: capitalize;
+    box-shadow: -5px -5px 5px #fff7,
+               5px 5px 5px #0002;
+    animation: opacity 0.2s linear;
+}
+@keyframes opacity {
+    from{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    
+}

@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './gallery.css'
 import Menu from './menu'
-
 
 const Gallery = () => {
 
     const [items, setItems] = useState(Menu)
+    const [loading, setLoading] = useState(false)
+    useEffect(()=> {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 3000);
+    },[])
 
     const filterItem = (catItem) =>{
         const updatedItems =Menu.filter((curElem) =>{
@@ -44,9 +50,9 @@ const Gallery = () => {
                                     return (
                                         <div className="item1 col-12 col-md-6 col-lg-6 col-xl-4 my-5" key={id}>
                                             <div className="row g-2 item-inside">
-                                                <div className="col-12 col-md-12 col-lg-4 img-div d-flex justify-content-center">
+                                                {loading ? <div className="skeleton"></div> :<div className="col-12 col-md-12 col-lg-4 img-div d-flex justify-content-center">
                                                     <img src={image} alt={name} className='img-fluid'/>
-                                                </div>
+                                                </div>}
                                                 <div className="col-12 col-md-12 col-lg-8">
                                                     <div className="main-title pt-2 pb-1">
                                                         <h4>{name}</h4>

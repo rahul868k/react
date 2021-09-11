@@ -3,6 +3,8 @@ import './style.css'
 import { NavLink } from 'react-router-dom'
 import ScrollToTop from './scrollToTop'
 import ScrollIndicator from './Scrollindicator'
+
+
 const Sidenav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
     const handleToggle = () => {
